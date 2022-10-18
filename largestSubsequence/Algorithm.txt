@@ -1,0 +1,9 @@
+LCS is a well-known problem, and there are similar problems here:
+
+
+Bottom-up DP utilizes a matrix m where we track LCS sizes for each combination of i and j.
+
+If a[i] == b[j], LCS for i and j would be 1 plus LCS till the i-1 and j-1 indexes.
+Otherwise, we will take the largest LCS if we skip a charracter from one of the string (max(m[i - 1][j], m[i][j - 1]).
+
+
