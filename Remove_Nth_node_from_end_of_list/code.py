@@ -18,7 +18,7 @@ class Solution(object):
         for i in range(0,n):
             fast = fast.next
         if fast==None:
-            return slow.next
+            return head.next
         #moving the slow pointer
         while(fast.next!=None):
             fast = fast.next
