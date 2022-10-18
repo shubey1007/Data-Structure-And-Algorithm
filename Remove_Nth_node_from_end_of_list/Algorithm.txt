@@ -1,0 +1,9 @@
+Approach Used: Two-Pointer Approach
+Time Complexity: O(n)
+Space Complexity: O(1)
+Algorithm:
+1. Take two dummy nodes i.e fast and slow, that point to head
+2. Start traversing until the fast pointer reaches the nth node
+3. Check for edge case if fast = None, if so, it means the head is to be deleted. So, simply return head.next(the new head)
+4. Now start traversing both of the pointers by one step until the fast pointer reaches the last node.
+5. Now that the traversal is done, we head to the deleting part by updating links between nodes. We make slow.next point to slow.next.next to ignore/disconnect the given node.
